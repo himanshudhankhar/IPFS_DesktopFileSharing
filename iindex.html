@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            IPFS File Sharing
+        </title>
+        <link rel ="stylesheet" href="photon.min.css"/>
+        <link rel ="stylesheet" href="styles.css"/>
+        <!-- <link rel="stylesheet" href ="css/bootstrap.css"/>
+        <script language="javascript" src="js/bootstrap.js"></script>
+         -->
+        
+    </head>
+    <body>
+      <div class="parent">
+      <div class="container">
+            <form>
+                    <div class="form-group">
+                      <h2>Upload File</h2>
+                      <h3>Enter File Name: (with exts)</h3>
+                    <input type="text" class="form-control FileName" style="width:50" placeholder="FileName" id ="file_name">
+                      <button type="submit" class="btn btn-form btn-large btn-primary" id="submit_btn">Browse</button>
+                    </div>
+                <!--    <div class="form-group">
+                      <label>Hash</label>
+                      <input type="text" class="form-control" placeholder="Hash" id = "Hash" >
+                </div>
+               --->
+               <div class="DownloadFiles">
+                 <h2>Available Files On Network</h2>
+                 <h5>Select File to download it</h5>
+                    <div >
+                      <div class="heading">
+                        <h4 class="heading_content">
+                          Name
+                        </h4>
+                        <h4 class="heading_content">
+                          Download
+                        </h4>
+                      </div>
+                        <div class="lawda" id="lawda" >
+
+                        </div>
+                    </div>
+               </div>
+                   
+                  
+                  
+                <!--    
+                    <div class="form-actions">
+                      <button type="submit" class="btn btn-form btn-primary" id="download_btn">Download</button>
+                     
+                    </div>
+                  -->
+                  </form>
+                  </div>
+<div class="chatBox">
+  <h2 class="chat-header">Chat With Peers</h2>
+<div id="chat">
+
+</div>
+
+
+<div class="chat-footer">
+<div class="Row"> 
+  <label class="label">Name:</label>
+  <input type="text" class="senderName" id="sender_name" placeholder="john smith" />
+</div>
+<div class="Row"> 
+  <label class="label">Message:</label>
+  <textarea name="message" class="MessageContent" rows="3" cols="40" id="message_content" placeholder="You can use mulitline here"></textarea>
+  <!-- <input type="text"   placeholder="How are You!!" /> -->
+  </div>
+  <div class="submit_bttn">
+  <button class="btn btn-primary btn-large" id="send_message">send</button>
+</div>
+</div>
+</div>
+
+
+                  </div>
+
+
+
+
+<!--now what we have to do is that we have to generate a list of all possible files(name with hash of that file and when we upload a file we will send the hash of file and name of the file 
+what server will do is that it will store the hash of file and name of file 
+
+-->
+                  <script>
+                    require('./iiindex.js');
+                      </script>
+    </body>
+</html>
